@@ -25,8 +25,9 @@ With the rapid growth of the blockchain ecosystem, the XRP Ledger (XRPL) has bec
 To address this challenge, we propose the creation of an innovative AI agent that will serve as a personalized digital tutor, integrated with an advanced LLM-based chatbot. This tutor will be designed to guide users intuitively and efficiently within the XRPL ecosystem, ensuring that even those with little or no technical experience can easily navigate the platform's features.
 
 ### Frontend Built With
+
 The following languages, frameworks, and technologies were used to build the frontend:
-<br>
+
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://react.dev)
 [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
