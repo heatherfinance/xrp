@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <div>
   <div align="center">
-      <img src="./Logo/Logo.svg" width="500" alt="logo" />
+      <img src="./Logo/Logo.svg" width="500px" alt="logo" />
     </a>
   </div>
 
