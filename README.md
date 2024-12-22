@@ -11,7 +11,7 @@
     <br />
       <a href="https://github.com">View Demo</a>
       ·
-      <a href="https://github.com">View project documentation</a>
+      <a href="https://drive.google.com/file/d/1m5BrZP7o92sqtvW8ypIuTp9JKLZG2Xcy/view">View project documentation</a>
       ·
       <a href="https://github.com">XRPL Hackaton's page</a>
   </p>
