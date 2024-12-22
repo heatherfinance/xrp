@@ -2,11 +2,9 @@
 <div>
   <div align="center">
     <a href="https://github.com/othneildrew/Best-README-Template">
-      <img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" />
+      <img src="./Logo/Logo.svg" width="200" alt="Nest Logo" />
     </a>
   </div>
-
-  <h3 align="center">Heather AI</h3>
 
   <p align="center">
     This repository contains the backend for an AI-powered digital tutor, integrated with an advanced LLM-based chatbot.
@@ -27,7 +25,20 @@ With the rapid growth of the blockchain ecosystem, the XRP Ledger (XRPL) has bec
 
 To address this challenge, we propose the creation of an innovative AI agent that will serve as a personalized digital tutor, integrated with an advanced LLM-based chatbot. This tutor will be designed to guide users intuitively and efficiently within the XRPL ecosystem, ensuring that even those with little or no technical experience can easily navigate the platform's features.
 
-### Built With
+### Frontend Built With
+The following languages, frameworks, and technologies were used to build the frontend:
+<br/>
+<br />
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://react.dev)
+<br />
+[![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
+<br />
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+
+
+
+
+### Backend Built With
 
 The following languages, frameworks, and technologies were used to build the backend:
 
@@ -47,75 +58,6 @@ The following languages, frameworks, and technologies were used to build the bac
 
 To run the project, follow these steps:
 
-### Clone the repository
-
-```bash
-git clone https://github.com/rgvieiraoficial/heather-ai-server.git
-```
-
-### Install the dependencies.
-
-```bash
-cd heather-ai-server
-
-yarn install
-```
-
-### Create the environment variables.
-
-Create a copy of the .env.example file and rename it to .env.local.
-
-Content of the .env.local file:
-
-```bash
-#Server Port
-PORT=3334
-
-#PostgreSQL
-POSTGRES_USER=
-POSTGRES_PASSWORD=
-POSTGRES_DB=
-
-#PGADMIN
-PGADMIN_DEFAULT_EMAIL=
-PGADMIN_DEFAULT_PASSWORD=
-
-#Secret Token
-SECRET_TOKEN=
-
-#Prisma
-DATABASE_URL="postgresql://johndoe:randompassword@main-db:5432/mydb?schema=public"
-```
-
-Create another file named .env containing only the External Database Connection URI (Outside of Docker) to be able to use the Prisma CLI.
-
-```bash
-#Prisma
-DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
-```
-Important: In the env.local file, the Database Connection URI should have the Host as "main-db" (or the name of the Docker service you define), while in the .env file, the Host should be "localhost." This will allow you to run migrations from the terminal of the computer running Docker while developing the project.
-
-### Bring up the Docker containers.
-
-```bash
-docker compose up
-```
-
-### Run the Database Migrations.
-
-```bash
-npx prisma migrate dev
-```
-
-### Access the server's "Health Check" page.
-
-```bash
-http://localhost:PORT
-
-Example:
-
-http://localhost:3334
-```
 
 ## Authors
 
