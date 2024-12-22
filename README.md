@@ -53,7 +53,7 @@ To run the project, follow these steps:
 ### Clone the repository
 
 ```bash
-https://github.com/heatherfinance/xrp.git
+git clone https://github.com/heatherfinance/xrp.git
 ```
 
 ### Detailed instructions for running the project are in the front end README
