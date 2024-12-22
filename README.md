@@ -1,8 +1,7 @@
 <!-- PROJECT LOGO -->
 <div>
   <div align="center">
-    <a href="https://github.com/othneildrew/Best-README-Template">
-      <img src="./Logo/Logo.svg" width="200" alt="Nest Logo" />
+      <img src="./Logo/Logo.svg" width="500" alt="logo" />
     </a>
   </div>
 
@@ -27,12 +26,9 @@ To address this challenge, we propose the creation of an innovative AI agent tha
 
 ### Frontend Built With
 The following languages, frameworks, and technologies were used to build the frontend:
-<br/>
-<br />
+<br>
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://react.dev)
-<br />
 [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
-<br />
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 
 
@@ -43,15 +39,10 @@ The following languages, frameworks, and technologies were used to build the fro
 The following languages, frameworks, and technologies were used to build the backend:
 
 [![Node.js Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
-<br/>
 [![TypeScript Badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-<br/>
 [![NestJS Badge](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com)
-<br/>
 [![Prisma Badge](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)](https://www.prisma.io)
-<br/>
 [![Postgres Badge](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
-<br/>
 [![Docker Badge](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com)
 
 ## Running the project.
@@ -64,13 +55,12 @@ To run the project, follow these steps:
 https://github.com/heatherfinance/xrp.git
 ```
 
-### Install the dependencies
-```bash
-cd heather-ai-frontend
-npm install
-cd heather-ai-backend
-npm install
-```
+### Detailed instructions for running the project are in the front end README
+<a href="http://github.com" >Instructions FrontEnd</a>
+
+### Detailed instructions for running the project are in the back end README
+
+<a href="http://github.com" >Instructions BackEnd</a>
 
 
 
