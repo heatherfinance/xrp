@@ -9,11 +9,11 @@
     Project developed for the XRPL Hackathon 2024
  <br />
     <br />
-      <a href="https://github.com">View Frontend</a>
+      <a href="https://github.com">View Demo</a>
       ·
-      <a href="https://github.com">Report Bug</a>
+      <a href="https://github.com">View project documentation</a>
       ·
-      <a href="https://github.com">Request Feature</a>
+      <a href="https://github.com">XRPL Hackaton's page</a>
   </p>
 </div>
 
