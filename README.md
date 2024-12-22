@@ -7,7 +7,7 @@
   </div>
 
   <p align="center">
-    This repository contains the backend for an AI-powered digital tutor, integrated with an advanced LLM-based chatbot.
+    Project developed for the XRPL Hackathon 2024
  <br />
     <br />
       <a href="https://github.com">View Frontend</a>
@@ -57,6 +57,22 @@ The following languages, frameworks, and technologies were used to build the bac
 ## Running the project.
 
 To run the project, follow these steps:
+
+### Clone the repository
+
+```bash
+https://github.com/heatherfinance/xrp.git
+```
+
+### Install the dependencies
+```bash
+cd heather-ai-frontend
+npm install
+cd heather-ai-backend
+npm install
+```
+
+
 
 
 ## Authors
