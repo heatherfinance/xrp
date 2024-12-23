@@ -1,0 +1,277 @@
+.wrapper{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+  background-color: var(--background);
+}
+
+.sidebar{
+  width: 250px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1; /* Ocupa o espaço restante */
+
+  padding: 40px 60px;
+  
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+}
+  
+.header {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  align-items: left;
+
+  margin-top: 330px;
+  margin-bottom: 20px;
+}
+  
+.line {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-top: 2px solid var(--purple);
+}
+
+.preferencesBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  color: var(--purple);
+  font-weight: 500;
+  margin: 80px 0px 20px 0px;
+}
+
+/* Navigation */
+.navList {
+  list-style: none;
+  display: flex;
+  padding-left: 10px;
+  gap: 10px;
+}
+  
+.navList li a {
+  text-decoration: none;
+  color: var(--background);
+  font-weight: 600;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+  
+.navList li a.active {
+  background-color: var(--white);
+  color: #6A0DAD;
+  border-color: #6A0DAD;
+}
+
+.navList li a:hover {
+  background-color: #EDEDED;
+  color: var(--text);
+}
+  
+/* Main Grid Layout */
+.mainGrid {
+  display: flex;
+  gap: 20px;
+  width: 85%;
+}
+
+/* Hero Section */
+.heroSection {
+  background: #F9F9F9;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+  
+.heroSection img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.heroContent {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.heroContent h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+/* Card Grid */
+.cardGrid {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: black;
+}
+
+.card p {
+  font-size: 12px;
+  color: var(--text);
+  padding: 0 10px 10px;
+}
+
+/* Preferences Section */
+.preferences {
+  background: var(--background);
+  padding: 15px;
+  border-radius: 12px;
+
+  border: 2px solid var(--purple);
+  text-align: left;
+  height: fit-content;
+}
+
+.preferences h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.preferenceButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.preferenceButtons button {
+  background-color: var(--button-background);
+  color: var(--fun-button-text);
+  opacity: 0.9;
+  border: 2px solid var(--lightPurple);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.navList li button{
+  background-color: var(--button-background);
+  color: var(--purple);
+  opacity: 0.9;
+  border: 2px solid var(--lightPurple);
+
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.preferenceButtons button:hover {
+  background-color: #E0C4F1;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/* Save Button */
+.saveButton {
+  background: var(--fun-button-background);
+  color: var(--fun-button-text);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  border-radius: 24px;
+  font-size: 18px;
+
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.saveButton:hover {
+  background: var(--purple);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardGrid {
+    flex-direction: column;
+  }
+
+  .navList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .heroContent h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navList li a {
+    padding: 6px 8px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 10px;
+  }
+
+  .saveButton {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,48 @@
+.container{
+    background-color: var(--background);
+    padding: 20px 40px;
+    height: 40%;
+}
+
+.variation{
+    display: flex;
+    align-items: center;
+}
+
+.topDiagram label{
+    margin-left: 5px;
+}
+label{
+    color: var(--lightText);
+    font-size: 12px;
+}
+
+.varPercentage{
+    color: var(--green);
+}
+
+.diagramImg{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.labels, .purple, .gray{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pColor, .gColor{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+}
+
+.pColor{
+    background-color: var(--purple);
+}
+.gColor{
+    background-color: var(--off-white);
+}

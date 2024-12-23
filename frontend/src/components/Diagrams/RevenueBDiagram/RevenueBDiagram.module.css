@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--background);
+    padding: 20px 40px;
+}
+
+.diagramImg{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+.labels, .purple, .gray{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pColor, .gColor{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+}
+
+.pColor{
+    background-color: var(--purple);
+}
+.gColor{
+    background-color: var(--off-white);
+}

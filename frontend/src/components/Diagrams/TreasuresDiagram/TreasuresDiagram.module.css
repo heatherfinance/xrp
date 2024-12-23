@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--background);
+    padding: 20px 40px;
+    height: 40%;
+}
+
+.diagramImg{
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.labels, .dpurple, .purple, .lpurple{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.pColor, .lpColor, .dpColor{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+.pColor{
+    background-color: var(--purple);
+}
+.lpColor{
+    background-color: var(--off-white);
+}
+.dpColor{
+    background-color: var(--dark-purple);
+}

@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  /* height: 100vh;
+  width: 100vw; */
+  margin: 0;
+}
+
+.wrapper{
+  width: 10vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.titleBox {
+  width: 30vw;
+  text-align: center;
+}
+
+.switchActionBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25vw;
+  height: 7vh;
+  margin-top: 1rem;
+  border-radius: 15px;
+  background: #f0f0f2;
+}
+
+.connectedWalletBox {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  width: 25vw;
+  height: 7vh;
+  margin-top: 1rem;
+  border: 1px solid #adadae;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.switchActionBtn {
+  width: 12vw;
+  height: 6vh;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  font-size: 1rem;
+  text-align: center;
+  background: #f0f0f2;
+  color: #adadae;
+}
+
+.switchActionBtn:hover {
+  color: #000;
+  border: #f0f0f2;;
+}
+
+.switchActionBtnActive {
+  width: 12vw;
+  height: 6vh;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 15px;
+  background: #fff;
+  color: #000;
+}
+
+.containerBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #000;
+}
+
+.subtitle {
+  font-size: 1rem;
+  text-align: center;
+  color: #c9c8c9;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  color: #780D69;
+  border: 1px solid #780D69;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #FAFAFA;
+}
+
+.btn {
+  width: 2.rem;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+  background: #780D69;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #780D69;
+  text-decoration: none;
+}
+
+.btnConnectWallet {
+  width: 25vw;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: solid 1px #adadae;
+  border-radius: 15px;
+  background:#f0f0f2;
+  color: #adadae;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btnConnectWallet:hover {
+  background:rgb(227, 227, 227);
+  color: #000;
+  border: solid 1px #adadae;
+  text-decoration: none;
+}
+
+.btnContinue {
+  width: 25vw;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 15px;
+  background: #780D69;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btnContinue:hover {
+  background: #780D69;
+  text-decoration: none;
+}
+
+.inputPassword {
+  width: 23vw;
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem;
+  color: #780D69;
+  border: 1px solid #adadae;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #FAFAFA;
+}
+
+.checkboxStyleb {
+  display: 'flex'; 
+  justify-content: 'flex-start';
+  align-items: 'center';
+  width: 25vw;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkboxStyleb input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkboxStyleb input:checked ~ .checkbox__checkmark {
+  background-color: #fff;
+}
+.checkboxStyleb input:checked ~ .checkbox__checkmark:after {
+  opacity: 1;
+}
+.checkboxStyleb:hover input ~ .checkbox__checkmark {
+  background-color: #eee;
+}
+.checkboxStyleb:hover input:checked ~ .checkbox__checkmark {
+  background-color: #fff;
+}
+.checkboxStyleb .checkbox__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 2px solid #333;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+.checkboxStyleb .checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.checkboxStyleb .checkbox__body {
+  margin-top: 0.2rem;
+  margin-left: 1.7rem;
+  color: #333;
+  line-height: 1.4;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.text {
+  text-align: center;
+  color: #666666;
+}
+
+.iconHeather{
+  width: 15%;
+}
+
+.errorText{
+  color: #F2451C;
+}
+
+.sidebar{
+  width: 250px;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+}
+
+/* Tema claro */
+:root {
+  --background: #ffffff;
+  --pure-white: #ffffff;
+
+  --lighter-background: #F6F6FB;
+  
+  --fun-button-background: #F1F1F1;
+  --fun-button-text: #840F74;
+  --button-background: #F1F1F1;
+  --button-text: #840F74;
+  
+  --headline-main: #840F74;
+  --headline1: #000000;
+  --headline2: #1F384C;
+  --text: #2F2F2F;
+  --lightText: #737B8B;
+  
+  --purple: #840F74;
+  --lightPurple: #BB35A9;
+  --dark-purple: #590059;
+  --green: #149D52;
+  --off-white: #F1F1F1;
+
+  --darkish-purple: #780D69;
+
+  --white: #DEDEDE;
+  --search-bar-text: #2F2F2F;
+  --sideBar: #202222;
+  /* --background: #191A1A; */
+  --pure-black: #000000;
+  --search-bar: #F6F6FB;
+}
+
+/* Tema escuro */
+html[data-theme="dark"] {
+  --background: #191A1A;
+  --lighter-background: #202222;
+
+  --fun-button-background: #840F74;
+  --fun-button-text: #F1F1F1;
+  --button-background: #780D694D;
+  --button-text: #DEDEDE;
+
+  --headline-main: #F1F1F1;
+  --headline1: #DEDEDE;
+  --headline2: #DEDEDE;
+  --text: #DEDEDE;
+
+  --purple: #780D69;
+  --dark-purple: #590059;
+  --lightPurple: #6B227E;
+  --green: #149D52;
+  --off-white: #F1F1F1;
+
+  --darkish-purple: #3C1146;
+
+  --pure-white: #121212;
+  --white: #1F1F1F;
+  --sideBar: #1B1B1B;
+  --background: #101010;
+  --pure-black: #000000;
+  --search-bar: #2E2E2E;
+}
+

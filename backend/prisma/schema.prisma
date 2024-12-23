@@ -1,0 +1,83 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-1.1.x", "debian-openssl-3.0.x", "linux-musl-openssl-3.0.x", "linux-musl-arm64-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String         @id @default(uuid())
+  nickname       String         @unique
+  wallet_address String         @unique
+  account_type   String
+  password       String
+  role           UserRole       @default(USER)
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  Transactions   Transactions[]
+  Chat           Chat[]
+}
+
+enum UserRole {
+  ADMIN
+  USER
+}
+
+model Transactions {
+  id                         String            @id @default(uuid())
+  destination_wallet_address String
+  transaction_type           TransactionType
+  amount                     BigInt
+  currency                   String
+  status                     TransactionStatus
+  user                       User              @relation(fields: [user_id], references: [id])
+  user_id                    String
+  createdAt                  DateTime          @default(now())
+  updatedAt                  DateTime          @updatedAt
+}
+
+enum TransactionType {
+  DEPOSIT
+  PAYMENT
+}
+
+enum TransactionStatus {
+  PENDING
+  SETTLED
+}
+
+model Chat {
+  id        String     @id @default(uuid())
+  title     String
+  user      User       @relation(fields: [user_id], references: [id])
+  user_id   String
+  Messages  Messages[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+model Messages {
+  id        String       @id @default(uuid())
+  role      MessagesRole
+  content   String
+  chat      Chat         @relation(fields: [chat_id], references: [id])
+  chat_id   String
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+}
+
+enum MessagesRole {
+  assistant
+  system
+  user
+  tool
+}

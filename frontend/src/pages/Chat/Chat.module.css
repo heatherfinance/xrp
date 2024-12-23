@@ -1,0 +1,230 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: calc(100vh - 60px); /* Ajusta a altura para deixar espaço para a barra de navegação e topo */
+  overflow-y: auto; /* Permite rolagem caso o conteúdo exceda a altura */
+  padding: 20px;
+}
+
+.wrapper{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+
+.sidebar{
+  width: 250px;
+}
+
+/* Container */
+.container {
+  width: 80%; /* Ajuste a largura conforme necessário */
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+
+.logo{
+  max-width: 200px;
+  margin-bottom: 20px;
+  
+}
+
+
+/* Título */
+.title {
+  font-size: 2rem;
+  color: var(--headline-main);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--text); /* Certifique-se de que a cor esteja definida */
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+
+
+/* Cartões */
+.goalCards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: var(--lighter-background);
+  border: 2px solid var(--lightPurple);
+  border-radius: 8px;
+  height: 150px;
+  flex: 1;
+  margin: 0 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Área de Input */
+.inputArea {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--lighter-background);
+  border: 2px solid var(--lightPurple);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: var(--lighter-background);
+  color: var(--text);
+}
+
+/* Toggle Pro */
+.toggle {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.toggle span {
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.toggle input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.slider {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: var(--background);
+  border-radius: 50px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.toggle input:checked + .slider {
+  background-color: var(--purple);
+}
+
+.toggle .slider::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--lighter-background);
+  border-radius: 50%;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+
+.toggle input:checked + .slider::before {
+  transform: translate(20px, -50%);
+}
+
+/* Botão de envio */
+.submitButton {
+  background-color: #2980b9;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submitButton:hover {
+  background-color: #1f618d;
+}
+
+.chatArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.userMessage {
+  align-self: flex-end; /* Alinha à esquerda */
+  background-color: purple;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  max-width: 60%; /* Limita a largura das mensagens */
+}
+
+.aiMessage {
+  align-self: flex-start;
+  background-color: purple;
+  padding: 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+.aiMessage p {
+  margin: 0 0 15px 0;
+}
+
+.aiMessage ol {
+  margin: 10px 0 15px 20px;
+  padding: 0;
+  color: #ffffff;
+}
+
+.aiMessage ol li {
+  margin-bottom: 10px;
+}
+
+.aiMessage ol li::marker {
+  color: #ecf0f1;
+}
+
+.aiMessage strong {
+  font-weight: bold;
+}
+
