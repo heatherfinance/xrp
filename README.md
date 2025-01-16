@@ -9,7 +9,7 @@
     Project developed for the XRPL Hackathon 2024
  <br />
     <br />
-      <a href="https://github.com">View Demo</a>
+      <a href="https://drive.google.com/file/d/1E1celr19QY2t4zAQ7L1D2xfFMChusAIV/view">Pitch XRPL</a>
       ·
       <a href="https://drive.google.com/file/d/1m5BrZP7o92sqtvW8ypIuTp9JKLZG2Xcy/view">View project documentation</a>
       ·
@@ -57,11 +57,11 @@ git clone https://github.com/heatherfinance/xrp.git
 ```
 
 ### Detailed instructions for running the project are in the front end README
-<a href="http://github.com" >Instructions FrontEnd</a>
+<a href="https://github.com/heatherfinance/xrp/blob/79fe495a33bdea101450b9f465158fd099c539b5/frontend/README.md" >Instructions FrontEnd</a>
 
 ### Detailed instructions for running the project are in the back end README
 
-<a href="http://github.com" >Instructions BackEnd</a>
+<a href="https://github.com/heatherfinance/xrp/blob/79fe495a33bdea101450b9f465158fd099c539b5/backend/README.md" >Instructions BackEnd</a>
 
 
 
