@@ -13,7 +13,7 @@
       ·
       <a href="https://drive.google.com/file/d/1m5BrZP7o92sqtvW8ypIuTp9JKLZG2Xcy/view">View project documentation</a>
       ·
-      <a href="https://github.com">XRPL Hackaton's page</a>
+      <a href="https://xrpl-hackaledger.gitbook.io/xrpl-hackaledger">XRPL Hackaton's page</a>
   </p>
 </div>
 
